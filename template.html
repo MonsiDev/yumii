@@ -1,0 +1,111 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>yumii design framework</title>
+    <link rel="stylesheet" href="yumii.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <style type="text/css">
+      .yumii-layout_title > a{
+        opacity : 0.87;
+        color : rgb(66,66,66);
+        text-decoration : none; }
+      .yumii-right-content > section{
+        width : 100%;
+        border-bottom : 1px solid #ccc;
+      }
+      .yumii-cell{
+        padding-left : 15px;
+        padding-right : 15px;
+      }
+      .yumii-cell > form > *{
+        margin-top : 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="yumii_layout_fixed_left">
+      <h1 class="yumii-layout_title">
+        <a href="/" title="yumii foundation">yumii design framework</a>
+      </h1>
+      <nav class="yumii-layout_menu">
+        <a href="index.html" class="yumii-layout_nav" title="yumii компоненты">Главная</a>
+        <a href="/template.html" class="yumii-layout_nav is-active" title="yumii примеры">Шаблоны</a>
+        <a href="/callfeed.php" class="yumii-layout_nav">Отзывы</a>
+        <a href="/faq.php" class="yumii-layout_nav">FAQ</a>
+        <a href="/about.php" class="yumii-layout_nav">О Нас</a>
+      </nav>
+    </header>
+    </div>
+    <main class="yumii-right-content">
+      <section>
+        <div class="yumii-grid">
+          <div class="yumii-cell yumii-cell--6-col">
+            <h1 class="yumii-layout_title">
+              <a href="#auth">Авторизация</a>
+            </h1>
+            <form action="#reg" method=POST>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label" >Login</label>
+                <input type=text class="yumii-tp-input" name="login" value="">
+              </div>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Password</label>
+                <input type=password class="yumii-tp-input" name="password" value="">
+              </div>
+              <label class="yumii-checkbox">
+                <input type=checkbox class="yumii-checkbox__input" name="is-memory">
+                <span class="yumii-checkbox__label">запомнить</span>
+              </label>
+              <button type=submit class="yumii-button yumii-js-ripple">
+                войти
+              </button>
+            </form>
+          </div>
+          <div class="yumii-cell yumii-cell--6-col">
+            <h1 class="yumii-layout_title">
+              <a href="#reg">Регистрация</a>
+            </h1>
+            <form action="#reg" method=POST>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Name</label>
+                <input type=text class="yumii-tp-input" name="name" value="">
+              </div>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Surname</label>
+                <input type=text class="yumii-tp-input" name="surname" value="">
+              </div>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Login</label>
+                <input type=text class="yumii-tp-input" name="login" value="">
+              </div>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Password</label>
+                <input type=password class="yumii-tp-input" name="password" value="">
+              </div>
+              <div class="yumii-text-placeholder">
+                <label class="yumii-tp-label">Password check</label>
+                <input type=password class="yumii-tp-input" name="password_check" value="">
+              </div>
+              <div class="yumii-select-control" data-name="materik" selected="0">
+                <ul>
+                  <li value="russia">Россия</li>
+                  <li value="usa">USA</li>
+                  <li value="england">England</li>
+                  <li value="germany">Germany</li>
+                  <li value="japan">Japan</li>
+                </ul>
+              </div>
+              <button type=submit class="yumii-button yumii-js-ripple">
+                регистрация
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script src="yumii.js"></script>

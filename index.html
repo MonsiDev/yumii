@@ -1,0 +1,217 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>yumii design framework</title>
+    <link rel="stylesheet" href="yumii.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <style type="text/css">
+      .yumii-cell {
+        box-sizing: border-box;
+        background-color: #BDBDBD;
+        height: 200px;
+        padding-left: 8px;
+        padding-top: 4px;
+        color: white; }
+
+      .yumii-grid:first-of-type .mdl-cell {
+        height: 50px; }
+
+      .yumii-layout_title > a{
+        opacity : 0.87;
+        color : rgb(66,66,66);
+        text-decoration : none; }
+    </style>
+  </head>
+  <body>
+    <header class="yumii_layout_fixed_left">
+      <h1 class="yumii-layout_title">
+        <a href="/" title="yumii foundation">yumii design framework</a>
+      </h1>
+      <nav class="yumii-layout_menu">
+        <a href="index.html" class="yumii-layout_nav is-active" title="yumii компоненты">Главная</a>
+        <a href="template.html" class="yumii-layout_nav" title="yumii примеры">Шаблоны</a>
+        <a href="/callfeed.php" class="yumii-layout_nav">Отзывы</a>
+        <a href="/faq.php" class="yumii-layout_nav">FAQ</a>
+        <a href="/about.php" class="yumii-layout_nav">О Нас</a>
+      </nav>
+    </header>
+    </div>
+    <main class="yumii-right-content">
+      <div class="yumii-tabs">
+        <div class="yumii-navigation yumii-shadow--2dp text-center">
+          <a href="#tab1" class="is-active">ImageHoverBottom</a>
+          <a href="#tab2">ImageHoverLight</a>
+          <a href="#tab3">Link</a>
+          <a href="#tab4">SelectGroup</a>
+          <a href="#tab5">Card</a>
+          <a href="#tab6">Input-text</a>
+          <a href="#tab7">Buttons</a>
+          <a href="#tab8">CheckBox</a>
+          <a href="#tab9">Slider Progress</a>
+          <a href="#tab10">Grid</a>
+        </div>
+        <div class="yumii-nav-tab" id="tab1">
+          <div class="yumii-imagehover-bottom">
+            <img src="picture_240.png">
+            <div class="yumii-slow">
+              <h4>picture_240.png</h4>
+            </div>
+          </div>
+        </div>
+        <div class="yumii-nav-tab" id="tab2">
+          <div class="yumii-imagehover-bottom-light">
+            <img src="picture_240.png" class="yumii-img-responsive">
+            <div class="yumii-slow">
+              <h4>picture_240.png</h4>
+            </div>
+          </div>
+        </div>
+        <div class="yumii-nav-tab" id="tab3">
+          <a href="#" title="link">Link</a>
+        </div>
+        <div class="yumii-nav-tab" id="tab4">
+          <div class="yumii-select-control" data-name="list-type" selected="3">
+            <ul>
+              <li value="12">Select 12</li>
+              <li value="13">Select 13</li>
+              <li value="14">Select 14</li>
+              <li value="15">Select 15</li>
+            </ul>
+          </div>
+        </div>
+        <div class="yumii-nav-tab" id="tab5">
+          <div class="yumii-card yumii-shadow--2dp">
+            <div class="yumii-card-title">
+              <h3>CARD TITLE</h3>
+            </div>
+            <div class="yumii-card-supporting-text">
+              card-supporting-text
+            </div>
+          </div>
+        </div>
+        <div class="yumii-nav-tab" id="tab6">
+          <div class="yumii-text-field">
+            <input type=text class="yumii-tf-input" value="" placeholder="Name">
+          </div>
+          <div class="yumii-text-placeholder">
+            <label class="yumii-tp-label">Surname</label>
+            <input type=text class="yumii-tp-input" value="">
+          </div>
+          <div class="yumii-text-placeholder">
+            <label class="yumii-tp-label">Message</label>
+            <textarea type=text class="yumii-tp-input" value=""></textarea>
+          </div>
+        </div>
+        <div class="yumii-nav-tab" id="tab7">
+          <button class="yumii-button yumii-button-default" id="btn-pp-show">
+            BUTTON POPUP SHOW
+          </button>
+          <button class="yumii-button-scroll">
+            BUTTON SCROLL
+          </button>
+          <button class="yumii-button yumii-js-ripple">
+            BUTTON RIPPLE
+          </button>
+        </div>
+	     <div class="yumii-nav-tab" id="tab8">
+		      <label class="yumii-checkbox">
+            <input type=checkbox class="yumii-checkbox__input" checked>
+            <span class="yumii-checkbox__label">checkbox</span>
+          </label>
+          <label class="yumii-radio">
+            <input type=radio class="yumii-radio__input" name="dva">
+            <span class="yumii-radio__label">radio button 1</span>
+          </label>
+          <label class="yumii-radio">
+            <input type=radio class="yumii-radio__input" name="dva">
+            <span class="yumii-radio__label">radio button 2</span>
+          </label>
+	     </div>
+       <div class="yumii-nav-tab" id="tab9">
+         <div class="yumii-progress" min="-300" max="300" id="pb1"></div>
+         <input class="yumii-slider" id="sn1" type="range" min="-300" max="300" value="0" tabindex="1">
+       </div>
+       <div class="yumii-nav-tab" id="tab10">
+         <div class="yumii-grid">
+           <div class="yumii-cell yumii-cell--12-col yumii-cell--6-phone">
+             grid--12-col (6 phone)
+           </div>
+
+           <div class="yumii-cell yumii-cell--6-col yumii-cell--6-phone">
+             grid--6-col (6 phone)
+           </div>
+           <div class="yumii-cell yumii-cell--6-col">
+             grid--6-col
+           </div>
+
+           <div class="yumii-cell yumii-cell--3-col">
+             grid--3-col
+           </div>
+           <div class="yumii-cell yumii-cell--3-col">
+             grid--3-col
+           </div>
+           <div class="yumii-cell yumii-cell--3-col">
+             grid--3-col
+           </div>
+           <div class="yumii-cell yumii-cell--3-col">
+             grid--3-col
+           </div>
+
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+           <div class="yumii-cell yumii-cell--1-col">
+             grid--1-col
+           </div>
+         </div>
+       </div>
+     </div>
+    </main>
+  </body>
+</html>
+<script src="yumii.js"></script>
+<script type="text/JavaScript">
+    document.querySelector('#pb1').addEventListener('setProgress', function(event){
+      document.querySelector('#sn1').addEventListener('input', function(){
+        event.set_progress(this.value);
+      });
+  });
+
+  var popup = new PopupShow('Безопасные цвета', 'Вашему вниманию предлагается палитра цветов, рекомендуемых для экранного дизайна. Безопасные цвета всегда неизменны при переходе от одного браузера к другому, от одного монитора к другому, или от одной платформы к другой, с их различными разрешениями и возможностями цветопередачи. Если веб-браузер не в состоянии правильно отобразить тот или иной цвет, то он пытается подобрать похожий или смешивает несколько соседних цветов. Может так случиться, что исходный цвет будет замещён чем-то совершенно неподходящим. Сегодня уже весьма спорна целесообразность использования безопасной палитры, однако используя её, вы будете уверены, что цвета будут выглядеть неизменно хорошо и без искажений даже на очень старых компьютерах, вплоть до 8-битного режима отображения с поддержкой всего 256 цветов. Безопасные цвета были выведены математически, а не потому, что они кому-то больше пришлись по душе. Для получения безопасного цвета из Красного, Зелёного и Синего, нужно использовать только данные десятичные значения: 0, 51, 102, 153, 204, 255 — и никакие другие. Каждое из трёх шестнадцатеричных значений не должно отличаться от 00, 33, 66, 99, CC, FF.');
+  document.getElementById('btn-pp-show').addEventListener('click', function(event){
+    popup.onShow();
+  });
+</script>
